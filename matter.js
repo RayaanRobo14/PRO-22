@@ -264,7 +264,7 @@ var Axes = _dereq_('../geometry/Axes');
      * @param {bool} isStatic
      */
     Body.setStatic = function(body, isStatic) {
-        for (var i = 0; i < body.length; i++) {
+        for (var i = 0; i < body.parts.length; i++) {
             var part = body.parts[i];
             part.isStatic = isStatic;
 
